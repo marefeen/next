@@ -4,6 +4,7 @@ import PostsListing from "./PostsListing";
 import PostDetails from "./PostDetails";
 import Heading from "./Heading";
 import TextBlockWithImage from "./TextBlockWithImage";
+import Carousel from "./Carousel";
 
 // All of the Agility Page Module Components that are in use in this site need to be imported into this index file.
 // Place Page Modules in allModules array below, passing in a name and the component.
@@ -13,6 +14,7 @@ const allModules = [
   { name: "Heading", module: Heading },
   { name: "FeaturedPost", module: FeaturedPost },
   { name: "PostsListing", module: PostsListing },
+  { name: "Carousel", module: Carousel },
   { name: "PostDetails", module: PostDetails },
   { name: "RichTextArea", module: RichTextArea },
 ];
