@@ -18,16 +18,16 @@ const Carousel = () => {
           onSlideChange={() => console.log('slide change')}
         >
           <SwiperSlide>
-            <div className='h-96 w-50 bg-red'>Slide 1</div>
+            <div className='h-96 w-50 bg-red'>Slide 0</div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='h-96 w-50 bg-blue'>Slide 2</div>
+            <div className='h-96 w-50 bg-blue'>Slide 1</div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='h-96 w-50 bg-orange'>Slide 3</div>
+            <div className='h-96 w-50 bg-orange'>Slide 2</div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='h-96 w-50 bg-green'>Slide 4</div>
+            <div className='h-96 w-50 bg-green'>Slide 3</div>
           </SwiperSlide>
         </Swiper>
       </div>
