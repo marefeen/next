@@ -4,7 +4,7 @@ import { AgilityImage } from "@agility/nextjs";
 const ImageComponent = ({ module }) => {
   // get module fields
   const { fields } = module;
-
+  console.log(module, 'image mod')
   return (
     <div className="relative px-8">
       <div className="md:w-6/12 flex-shrink-0 relative">
