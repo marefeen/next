@@ -3,6 +3,7 @@ import FeaturedPost from "./FeaturedPost";
 import PostsListing from "./PostsListing";
 import PostDetails from "./PostDetails";
 import ImageComponent from "./ImageComponent";
+import ImageCarousel from "./ImageCarousel";
 import Heading from "./Heading";
 import TwoHeadings from "./TwoHeadings";
 import TextBlockWithImage from "./TextBlockWithImage";
@@ -19,7 +20,8 @@ const allModules = [
   { name: "PostDetails", module: PostDetails },
   { name: "RichTextArea", module: RichTextArea },
   { name: "RichTextArea", module: RichTextArea },
-  { name: "ImageComponent", module: ImageComponent }
+  { name: "ImageComponent", module: ImageComponent },
+  { name: "ImageCarousel", module: ImageCarousel }
 ];
 
 export const getModule = (moduleName) => {
