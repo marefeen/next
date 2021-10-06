@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components'
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -6,8 +7,11 @@ import { AgilityImage } from "@agility/nextjs";
 
 const ImageCarousel = ({ module }) => {
   const { fields } = module;
-  const images = Object.values(fields);
-  console.log("carousel", images);
+  const {isAutoScrollEnabled, slideDelay, ...restFields} = fields
+  const images = Object.values(restFields);
+  const autoPlay = isAutoScrollEnabled === 'true'
+  // default slide delay to 1 seconds 
+  const delayInSeconds = (slideDelay > 1 && slideDelay < 10) ? slideDelay * 1000 : 1000
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -30,14 +34,12 @@ const ImageCarousel = ({ module }) => {
   return (
     <div className="relative px-8">
       <div className="max-w-screen-xl mx-auto my-12 md:mt-18 lg:mt-20">
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} autoPlay={autoPlay} autoPlaySpeed={delayInSeconds} infinite={true}>
           {images.map((img,i) => (
-            <AgilityImage
+            <StyledImg
               src={img.url}
               alt={img.label}
-              width="600"
-              height="450"
-              className="rounded-lg object-cover object-center"
+              className="rounded-lg object-cover object-center p-3"
               key={`${img.label}+${i}`}
             />
           ))}
@@ -48,3 +50,9 @@ const ImageCarousel = ({ module }) => {
 };
 
 export default ImageCarousel;
+
+const StyledImg = styled.img`
+  margin: 5px;
+  height: 300px;
+  width: auto;
+`
