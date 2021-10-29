@@ -7,6 +7,7 @@ import ImageCarousel from "./ImageCarousel";
 import Heading from "./Heading";
 import TwoHeadings from "./TwoHeadings";
 import TextBlockWithImage from "./TextBlockWithImage";
+import WeatherSearch from "./WeatherSearch";
 
 // All of the Agility Page Module Components that are in use in this site need to be imported into this index file.
 // Place Page Modules in allModules array below, passing in a name and the component.
@@ -21,7 +22,8 @@ const allModules = [
   { name: "RichTextArea", module: RichTextArea },
   { name: "RichTextArea", module: RichTextArea },
   { name: "ImageComponent", module: ImageComponent },
-  { name: "ImageCarousel", module: ImageCarousel }
+  { name: "ImageCarousel", module: ImageCarousel },
+  { name: "WeatherSearch", module: WeatherSearch }
 ];
 
 export const getModule = (moduleName) => {
