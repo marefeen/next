@@ -1,0 +1,92 @@
+[
+  {
+    "id": 316187,
+    "name": "Ottawa, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.42,
+    "lon": -75.7,
+    "url": "ottawa-ontario-canada"
+  },
+  {
+    "id": 314842,
+    "name": "Hull, Quebec, Canada",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.43,
+    "lon": -75.73,
+    "url": "hull-quebec-canada"
+  },
+  {
+    "id": 316763,
+    "name": "Rockcliffe Park, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.45,
+    "lon": -75.68,
+    "url": "rockcliffe-park-ontario-canada"
+  },
+  {
+    "id": 316769,
+    "name": "Rockliffe, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.45,
+    "lon": -75.68,
+    "url": "rockliffe-ontario-canada"
+  },
+  {
+    "id": 314051,
+    "name": "Eastview Centre, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.43,
+    "lon": -75.65,
+    "url": "eastview-centre-ontario-canada"
+  },
+  {
+    "id": 314052,
+    "name": "Eastview, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.43,
+    "lon": -75.65,
+    "url": "eastview-ontario-canada"
+  },
+  {
+    "id": 314433,
+    "name": "Gatineau Point, Quebec, Canada",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.47,
+    "lon": -75.7,
+    "url": "gatineau-point-quebec-canada"
+  },
+  {
+    "id": 316398,
+    "name": "Pointe-Gatineau, Quebec, Canada",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.47,
+    "lon": -75.7,
+    "url": "pointe-gatineau-quebec-canada"
+  },
+  {
+    "id": 316381,
+    "name": "Pointe-A-Gatineau, Quebec, Canada",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.47,
+    "lon": -75.7,
+    "url": "pointe-a-gatineau-quebec-canada"
+  },
+  {
+    "id": 314487,
+    "name": "Gloucester, Ontario, Canada",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 45.42,
+    "lon": -75.6,
+    "url": "gloucester-ontario-canada"
+  }
+]
