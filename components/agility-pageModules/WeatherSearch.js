@@ -10,7 +10,6 @@ const WeatherSearch = ({ module }) => {
 
   const router = useRouter();
   const { lang } = router.query;
-  console.log(lang, "quer"); // returns query params object
 
   // onchange handler for searchbar
 
@@ -21,7 +20,6 @@ const WeatherSearch = ({ module }) => {
       await fetch(`/api/weather?query=${query}`)
         .then((res) => res.json())
         .then((res) => {
-          console.log(res, "res");
           setResults(res);
         });
     } else {
@@ -31,25 +29,18 @@ const WeatherSearch = ({ module }) => {
 
   const onClickResult = async (result) => {
     setResults([]);
-    console.log("lolz", result);
     setQuery(result);
     await fetch(`/api/weather/city?query=${result}`)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res, "res");
         setResults(res);
         setCityResults(res);
       });
   };
   const onBlurResult = () => setCityResults(null);
 
-  // const onBlurSuggestions = () => {
-  //   console.log('what')
-  //   setResults([])}
-
   // get module fields
   const { fields } = module;
-  console.log(fields, module, "fields and module");
   return (
     <div className="relative px-8">
       <h1 className="font-display text-secondary-500 text-4xl font-black tracking-wide">{fields.searchTitle}</h1>
