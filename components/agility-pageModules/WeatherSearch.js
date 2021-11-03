@@ -16,8 +16,9 @@ const WeatherSearch = ({ module }) => {
   const onChange = useCallback(async (e) => {
     const query = e.target.value;
     setQuery(query);
+    const queryParams = lang ?  `?query=${query}&lang=${lang}` : `?query=${result}`
     if (query.length > 2) {
-      await fetch(`/api/weather?query=${query}`)
+      await fetch(`/api/weather${queryParams}`)
         .then((res) => res.json())
         .then((res) => {
           setResults(res);
@@ -30,7 +31,8 @@ const WeatherSearch = ({ module }) => {
   const onClickResult = async (result) => {
     setResults([]);
     setQuery(result);
-    await fetch(`/api/weather/city?query=${result}`)
+    const queryParams = lang ?  `?query=${result}&lang=${lang}` : `?query=${result}`
+    await fetch(`/api/weather/city${queryParams}`)
       .then((res) => res.json())
       .then((res) => {
         setResults(res);
