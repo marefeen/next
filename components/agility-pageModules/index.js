@@ -1,13 +1,13 @@
-import RichTextArea from "./RichTextArea";
-import FeaturedPost from "./FeaturedPost";
-import PostsListing from "./PostsListing";
-import PostDetails from "./PostDetails";
-import ImageComponent from "./ImageComponent";
-import ImageCarousel from "./ImageCarousel";
-import Heading from "./Heading";
-import TwoHeadings from "./TwoHeadings";
-import TextBlockWithImage from "./TextBlockWithImage";
-import WeatherSearch from "./WeatherSearch";
+import RichTextArea from "./RichTextArea/RichTextArea";
+import FeaturedPost from "./FeaturePost/FeaturedPost";
+import PostsListing from "./PostListing/PostsListing";
+import PostDetails from "./PostDetails/PostDetails";
+import ImageComponent from "./ImageComponent/ImageComponent";
+import ImageCarousel from "./ImageCarousel/ImageCarousel";
+import Heading from "./Heading/Heading";
+import TwoHeadings from "./TwoHeadings/TwoHeadings";
+import TextBlockWithImage from "./TextBlockWithImage/TextBlockWithImage";
+import WeatherSearch from "./WeatherSearch/WeatherSearch";
 
 // All of the Agility Page Module Components that are in use in this site need to be imported into this index file.
 // Place Page Modules in allModules array below, passing in a name and the component.

@@ -1,9 +1,8 @@
 import React from "react";
-import styled from 'styled-components'
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { AgilityImage } from "@agility/nextjs";
+
+import {StyledImg} from './Styled'
 
 const ImageCarousel = ({ module }) => {
   const { fields } = module;
@@ -51,8 +50,4 @@ const ImageCarousel = ({ module }) => {
 
 export default ImageCarousel;
 
-const StyledImg = styled.img`
-  margin: 5px;
-  height: 300px;
-  width: auto;
-`
+
